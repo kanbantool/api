@@ -1,0 +1,7 @@
+kanbantool.com API bindings and utilities
+=========================================
+
+This repository contains API bindings, examples and utilities to
+interact with KanbanTool service through the API.
+
+Read more about KanbanTool API on http://kanbantool.com/about/api
