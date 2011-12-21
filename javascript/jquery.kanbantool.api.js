@@ -8,7 +8,7 @@
  *
  * Sample usage:
  *     KanbanTool.Api.onError = function(e){ alert('Doh. API error error has occured:\n' + e.message); }
- *      KanbanTool.api  = new KanbanTool.Api('YOUR_ACCOUNT_DOMAIN_HERE', 'YOUR_API_TOKEN_HERE');
+ *      KanbanTool.api  = new KanbanTool.Api('YOUR_ACCOUNT_DOMAIN_HERE(i.e. test for test.kanbantool.com)', 'YOUR_API_TOKEN_HERE');
  *
  *      KanbanTool.api.getBoards( function(boards){
  *        if( window.console ){ console.log('Got boards: ', boards); }
@@ -20,7 +20,7 @@
  *            if( window.console ){ console.log('Got task', task); }
  *
  *             KanbanTool.api.createTaskComment( boards[0].id, task.id, {'comment[content]':'A comment'}, function(comment){
- *               console.log('Got comment', comment);
+ *               if( window.console ){ console.log('Got comment', comment); }
  *
  *               alert('A new task with comment has just been created on the ' + boards[0].name + ' board.');
  *            });
@@ -55,6 +55,8 @@ if(typeof KanbanTool == "undefined"){ KanbanTool = {}; }
 /*
  * Javascript API binding for kanbantool.com
  * see http://kanbantool.com/about/api for more details
+ * @param {string} subdomain - your account subdomain i.e. 'test' for test.kanbantool.com
+ * @param {string} api_token - your API token as shown on My Profile > API Access page
  */
 KanbanTool.Api = function( subdomain, api_token ){
   this.subdomain      = subdomain;
