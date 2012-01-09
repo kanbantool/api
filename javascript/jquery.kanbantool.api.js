@@ -3,7 +3,7 @@
  * through the JSONP interface. See http://kanbantool.com/about/api for more details
  *
  * @prerequisite jQuery
- * @version 0.5
+ * @version 0.6
  * @apiVersion 1.0
  *
  * Sample usage:
