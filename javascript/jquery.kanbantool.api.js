@@ -86,7 +86,7 @@ KanbanTool.Api = function( subdomain, api_token ){
       'url'     : this.apiEndpoint(url),
       'success' : this.callErrorDetection( method, url, data, success, error ),
       'data'    : jQuery.extend(data, {'api_token':this.api_token, '_m':method}),
-      'dataType': 'json'
+      'dataType': 'jsonp'
     });
 
 
